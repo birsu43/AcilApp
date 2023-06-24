@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+     Ayarlar
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item class="avatar1">
+    <ion-avatar slot="start">
+      <img alt="insan" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+    </ion-avatar>
+    <ion-label tappable (click)="sayfaAc()"> Profil </ion-label>
+  </ion-item>
+  <ion-item class="avatar2">
+    <ion-avatar slot="start">
+      <img alt="Soru isareti" src="https://upload.wikimedia.org/wikipedia/commons/8/84/Icons8-question-mark-52.png?20210616080016" />
+    </ion-avatar>
+    <ion-label  tappable (click)="sayfaAc2()"> Nasıl Kullanılır? </ion-label>
+  </ion-item>
+ 
+  <ion-item class="avatar4">
+    <ion-avatar slot="start">
+      <img alt="Kaçış" src="data:image/png;base64,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" />
+    </ion-avatar>
+    <ion-label>Çıkış Yap </ion-label>
+  </ion-item>
+</ion-content>

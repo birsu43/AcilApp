@@ -1,0 +1,55 @@
+// body {
+//     cursor: url('http://ionicframework.com/img/finger.png'), auto;
+// }
+
+// .header .col {
+//     background-color:lightgrey;
+// }
+
+// .col {
+//     border: solid 1px grey;
+//     border-bottom-style: none;
+//     border-right-style: none;
+// }
+
+// .col:last-child {
+//     border-right: solid 1px grey;
+// }
+
+// .row:last-child .col {
+//     border-bottom: solid 1px grey;
+// }
+.custom-toolbar {
+    --background: #afd9ea;
+  }
+.button{
+  --background: #47a3c7;
+}
+h5{
+  color: black;
+}
+
+.ion-card{
+   margin: 1%;
+   width: 98%;
+}
+img{
+  width: 20%;
+  height: 20%;
+}
+
+ion-modal {
+  --height: 50%;
+  --border-radius: 16px;
+  --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+ion-modal::part(backdrop) {
+  background: rgba(209, 213, 219);
+  opacity: 1;
+}
+
+ion-modal ion-toolbar {
+  --background: rgb(14 116 144);
+  --color: white;
+}

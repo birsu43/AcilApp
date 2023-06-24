@@ -1,0 +1,51 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+    Ana Sayfa
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!---------------------------------------------------------------------------------------->
+<ion-content [fullscreen]="true" > 
+
+  <ion-card  (click)="goToDifferentPage()" >
+   <ion-item>
+      <img src="https://res.cloudinary.com/dklwdws0d/image/upload/v1684617519/letter-a_1_hev9tk.png" class="img">
+      <h4>Acil Randevusu Al</h4>
+    </ion-item>
+  </ion-card>
+   
+  <ion-card color="primary">
+      <h4>En Yakın Hastane</h4>
+      <div style="border-bottom:2px solid rgb(92, 90, 90);width:99%;"></div>
+    
+      <ion-item>
+        <ion-input label="Şehir"></ion-input>
+      </ion-item>
+     
+      <ion-item>
+        <ion-input label="Hastane"></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-input label="Doluluk Oranı"></ion-input>
+      </ion-item>
+  </ion-card>
+
+
+  <ion-card color="primary">
+    <h4>Şehirler</h4>
+    <div style="border-bottom:2px solid rgb(92, 90, 90);width:99%;"></div>
+
+    <ion-item router-direction="forward" routerLink="/popup">
+      <ion-input label="Ankara"  [readonly]="true" ></ion-input>
+    </ion-item>
+    <ion-item router-direction="forward" routerLink="/popup">
+      <ion-input label="Eskişehir"  [readonly]="true" ></ion-input>
+    </ion-item>
+    <ion-item router-direction="forward" routerLink="/popup">
+      <ion-input label="Bolu" [readonly]="true"></ion-input>
+    </ion-item>         
+</ion-card>
+</ion-content>

@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>Detay</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-content>
+      Lütfen seçtiğiniz teşhis ile alakalı daha fazla ayrıntı yazınız.
+      (Öksürük,titreme vb.)
+    </ion-card-content>
+    <div style="border-bottom:2px solid rgb(98, 80, 141);width:99%;"></div>
+  <ion-item>
+    <ion-textarea
+      placeholder="Şikayetinizn ayrıntılarını giriniz"
+      [autoGrow]="true">
+    </ion-textarea>
+  </ion-item>
+</ion-card>
+<ion-button  id="open-modal" expand="block">İleri</ion-button>
+<ion-modal #modal trigger="open-modal">
+  <ng-template>
+    <ion-content>
+      <ion-toolbar>
+        <ion-title></ion-title>
+        <ion-buttons slot="end">
+          <ion-button color="light" (click)="modal.dismiss()">×</ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+      <ion-list>
+      </ion-list>
+    </ion-content>
+  </ng-template>
+</ion-modal>
+</ion-content>

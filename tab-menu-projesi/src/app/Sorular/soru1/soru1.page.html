@@ -1,0 +1,372 @@
+<ion-header [translucent]="true">
+  <ion-toolbar  color="primary">
+    <ion-title>Teşhisler</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  
+ 
+    <ion-list>
+      <ion-item (click)="toggleSubItems1()">
+        <ion-label>Baş</ion-label>
+        <ion-icon [name]="showSubItems1 ? 'chevron-up-outline' : 'chevron-down-outline'" slot="end"></ion-icon>
+      </ion-item>
+      <ion-list *ngIf="showSubItems1"> 
+  <!---- --------------------------------------------------------------- -->
+        <ion-item (click)="toggleSubItems2()">
+          <ion-label>Çene</ion-label>
+          <ion-icon [name]="showSubItems2 ? 'chevron-up-outline' : 'chevron-down-outline'" slot="end"></ion-icon>
+        </ion-item>
+        <ion-list *ngIf="showSubItems2">
+          <ion-item>
+            <ion-label>Çene ağrısı</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Çene düşmesi(çene çıkması)</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Çene kilitlenmesi(Çene kaslarında spazm veya sertlik)</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Çiğnerken oluşan ağrı</ion-label>
+          </ion-item>
+        </ion-list> 
+  <!-- ------------------------------------------------------------------------------ -->
+         <ion-item  (click)="toggleSubItems11()">
+          <ion-label>Yüz</ion-label>
+          <ion-icon [name]="showSubItems11 ? 'chevron-up-outline' : 'chevron-down-outline'" slot="end"></ion-icon>
+        </ion-item>
+        <ion-list *ngIf="showSubItems11">
+          <ion-item>
+            <ion-label>Yanakta şişlik</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Yüzde ağrı</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Yüzde his kaybı</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Yüzde şişlik(Yüzde ödem)</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Yüzde kayma(Yüz felci)</ion-label>
+          </ion-item>
+        </ion-list>
+  <!-------------------------------------------------------------------------------------------------->
+          <ion-item  (click)="toggleSubItems12()">
+          <ion-label>Kulaklar</ion-label>
+          <ion-icon [name]="showSubItems11 ? 'chevron-up-outline' : 'chevron-down-outline'" slot="end"></ion-icon>
+        </ion-item>
+        <ion-list *ngIf="showSubItems12">
+          <ion-item>
+            <ion-label>Duyma bozukluğu(işitme bozukluğu)</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Duyma kaybı</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Kulak ağrısı</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>YKulak akıntısı</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Kulak çınlaması</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Kulakta basınç hissi</ion-label>
+          </ion-item>
+        </ion-list> 
+  <!--------------------------------------------------------------------------------------- -->
+         <ion-item  (click)="toggleSubItems13()">
+          <ion-label>Burun</ion-label>
+          <ion-icon [name]="showSubItems13 ? 'chevron-up-outline' : 'chevron-down-outline'" slot="end"></ion-icon>
+        </ion-item>
+        <ion-list *ngIf="showSubItems13">
+          <ion-item>
+            <ion-label>Burun akıntısı</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>burun kanaması</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Burun kaşıntısı</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Burun kökünde şişlik</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Burun tıkanıklığı</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Geniz akması</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Koku alamama</ion-label>
+          </ion-item>
+        </ion-list> 
+  <!-------------------------------------------------------------------------------->
+         <ion-item  (click)="toggleSubItems14()">
+          <ion-label>Ağız ve diş</ion-label>
+          <ion-icon [name]="showSubItems14 ? 'chevron-up-outline' : 'chevron-down-outline'" slot="end"></ion-icon>
+        </ion-item>
+        <ion-list *ngIf="showSubItems14">
+          <ion-item>
+            <ion-label>Diş apsesi</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Diş etinde kanama</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Diş ağrısı</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Diş sallanması</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Kan tükütme</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Kusma</ion-label>
+          </ion-item>
+        </ion-list> 
+  <!--------------------------------------------------------------------------------------->
+          <ion-item  (click)="toggleSubItems15()">
+          <ion-label>Saçlı bölge</ion-label>
+          <ion-icon [name]="showSubItems15 ? 'chevron-up-outline' : 'chevron-down-outline'" slot="end"></ion-icon>
+        </ion-item>
+        <ion-list *ngIf="showSubItems15">
+          <ion-item>
+            <ion-label>Baş ağrısı</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Baş dönmesi</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Bilinç kaybı</ion-label>
+          </ion-item>
+        </ion-list>
+  <!-- -------------------------------------------------------------------------------- -->
+         <ion-item  (click)="toggleSubItems15()">
+          <ion-label>Gözler</ion-label>
+          <ion-icon [name]="showSubItems15 ? 'chevron-up-outline' : 'chevron-down-outline'" slot="end"></ion-icon>
+        </ion-item>
+        <ion-list *ngIf="showSubItems15">
+          <ion-item>
+            <ion-label>Görme kaybı</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Gözde batma hissi</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Gözde yabancı cisim hissi</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Göz yaralanmaları</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Şiddetli göz ağrısı</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Gözde şiddetli şişlik ve kızarıklık</ion-label>
+          </ion-item>
+        </ion-list>
+  
+      </ion-list> 
+  <!-----------------------Baş Bitiş--------------------------------------------------->
+      
+  <!-------------------------------------------------------------------------------->
+      <ion-item (click)="toggleSubItems2()">
+        <ion-label>Boyun</ion-label>
+        <ion-icon [name]="showSubItems2 ? 'chevron-up-outline' : 'chevron-down-outline'" slot="end"></ion-icon>
+      </ion-item>
+      <ion-list *ngIf="showSubItems2">
+        <ion-item>
+          <ion-label>Boyun yaralanmaları</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Şiddetli boyun ağrıları</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Boğulma veya nefes almada zorluk</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Boyun şişlikleri</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Boyun kırıkları</ion-label>
+        </ion-item>
+      </ion-list> 
+  <!--------------------------------------------------------------------------------->
+       <ion-item (click)="toggleSubItems3()">
+        <ion-label>Kollar ve eller</ion-label>
+        <ion-icon [name]="showSubItems3 ? 'chevron-up-outline' : 'chevron-down-outline'" slot="end"></ion-icon>
+      </ion-item>
+      <ion-list *ngIf="showSubItems3">
+        <ion-item>
+          <ion-label>El parmaklarında kırıklar</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Elde yanıklar</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Parmaklarda his kaybı</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Kollarda his kaybı</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Elde uyuşma</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>El bileğinde kırık veya zedelenme</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Kollarda yanıklar</ion-label>
+        </ion-item>
+      </ion-list> 
+  <!--------------------------------------------------------------------------------->
+      <ion-item (click)="toggleSubItems10()">
+        <ion-label>Göğüs Bölgesi</ion-label>
+        <ion-icon [name]="showSubItems10 ? 'chevron-up-outline' : 'chevron-down-outline'" slot="end"></ion-icon>
+      </ion-item>
+      <ion-list *ngIf="showSubItems10">
+        <ion-item>
+          <ion-label>Göğüs ağrısı</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Göğüs bölgesine darbe</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Nefes darlığı</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Göğüste yanma</ion-label>
+        </ion-item>
+      </ion-list>
+  
+  <!-- --------------------------------------------------------------------------- -->
+      <ion-item (click)="toggleSubItems4()">
+        <ion-label>Sırt</ion-label>
+        <ion-icon [name]="showSubItems4 ? 'chevron-up-outline' : 'chevron-down-outline'" slot="end"></ion-icon>
+      </ion-item>
+      <ion-list *ngIf="showSubItems4">
+        <ion-item>
+          <ion-label>Bel ağrısı</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Bel tutulması</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Sırt ağrısı</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Sırtta şişlik</ion-label>
+        </ion-item>
+      </ion-list> 
+  <!---------------------------------------------------------------------------------->
+      <ion-item (click)="toggleSubItems9()">
+        <ion-label>Karın</ion-label>
+        <ion-icon [name]="showSubItems9 ? 'chevron-up-outline' : 'chevron-down-outline'" slot="end"></ion-icon>
+      </ion-item>
+      <ion-list *ngIf="showSubItems9">
+        <ion-item>
+          <ion-label>Mide bulantısı</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Hazımsızlık</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Kusma</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Mide ağrısı</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Mide yanması</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>İshal</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Karında şişlik</ion-label>
+        </ion-item>
+      </ion-list>
+  <!-------------------------------------------------------------------------------->
+      <ion-item (click)="toggleSubItems5()">
+        <ion-label>Kalça</ion-label>
+        <ion-icon [name]="showSubItems5 ? 'chevron-up-outline' : 'chevron-down-outline'" slot="end"></ion-icon>
+      </ion-item>
+      <ion-list *ngIf="showSubItems5">
+        <ion-item>
+          <ion-label>Kalça ağrısı</ion-label>
+        </ion-item>
+      </ion-list> 
+  <!------------------------------------------------------------------------------------>
+      <ion-item (click)="toggleSubItems6()">
+        <ion-label>Bacaklar</ion-label>
+        <ion-icon [name]="showSubItems6 ? 'chevron-up-outline' : 'chevron-down-outline'" slot="end"></ion-icon>
+      </ion-item>
+      <ion-list *ngIf="showSubItems6">
+        <ion-item>
+          <ion-label>Bacak ağrısı</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Bacakta his kaybı</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Bacakta şiddetli kramp</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Bacakta kramp</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Diz ağrısı</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Dizde  şişme</ion-label>
+        </ion-item>
+      </ion-list> 
+  <!---------------------------------------------------------------------------------->
+       <ion-item (click)="toggleSubItems7()">
+        <ion-label>Ayak</ion-label>
+        <ion-icon [name]="showSubItems7 ? 'chevron-up-outline' : 'chevron-down-outline'" slot="end"></ion-icon>
+      </ion-item>
+      <ion-list *ngIf="showSubItems7">
+        <ion-item>
+          <ion-label>Ayak ağrısı</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Ayakta şişme</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Ayakta uyuşma</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Ayak bileğinde zedelenme</ion-label>
+        </ion-item>
+      </ion-list> 
+  <!--------------------------------------------------------------------------------->
+       <ion-item (click)="toggleSubItems8()">
+        <ion-label>Genel</ion-label>
+        <ion-icon [name]="showSubItems8 ? 'chevron-up-outline' : 'chevron-down-outline'" slot="end"></ion-icon>
+      </ion-item>
+      <ion-list *ngIf="showSubItems8">
+        <ion-item>
+          <ion-label>Yüksek ateş</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Kas ağrısı</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Kemik ağrısı</ion-label>
+        </ion-item>
+      </ion-list>
+  <!------------------------------------------------------------------------------------->
+      <ion-button (click)="soru2()">İleri</ion-button>
+     </ion-list>
+  
+  </ion-content>
